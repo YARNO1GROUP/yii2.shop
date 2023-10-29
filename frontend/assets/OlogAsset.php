@@ -13,6 +13,7 @@ class OlogAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'olog/main.css',
+        'css/site.css',
     ];
     public $js = [
         "olog/js/jquery.min.js",
