@@ -6,7 +6,7 @@ use yii\rest\ActiveController;
 
 class CategoryController extends ActiveController
 {
-    public $modelClass = 'common\models\category';
+    public $modelClass = 'common\models\Category';
 
     public function actions(){
 
