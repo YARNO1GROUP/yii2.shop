@@ -12,24 +12,7 @@ class m230820_130312_db_create extends Migration
      */
     public function safeUp()
     {
-        $sql = "CREATE TABLE `user`(
-    `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `usetrname` VARCHAR(255) NOT NULL,
-    `auth_key` VARCHAR(255) NOT NULL,
-    `password_hash` VARCHAR(255) NOT NULL,
-    `password_reset_token` VARCHAR(255) NULL,
-    `email` VARCHAR(255) NOT NULL,
-    `status` SMALLINT NOT NULL,
-    `created_at` INT NOT NULL,
-    `updated_at` INT NOT NULL,
-    `verification_token` VARCHAR(255) NULL
-);
-ALTER TABLE
-    `user` ADD INDEX `user_usetrname_index`(`usetrname`);
-ALTER TABLE
-    `user` ADD INDEX `user_password_reset_token_index`(`password_reset_token`);
-ALTER TABLE
-    `user` ADD INDEX `user_email_index`(`email`);
+        $sql = "
 CREATE TABLE `news-category`(
     `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(255) NOT NULL
