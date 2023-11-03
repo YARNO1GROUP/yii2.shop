@@ -12,7 +12,7 @@ class m230821_065929_add_column_to_category_table extends Migration
      */
     public function safeUp()
     {
-        $this->addColumn('{{%category}}', 'image', $this->);
+        $this->addColumn('{{%category}}', 'image');
     }
 
     /**
